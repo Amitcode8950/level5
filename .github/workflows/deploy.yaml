@@ -12,9 +12,9 @@ on:
         - name: deploy via ssh
           uses: appleboy/ssh-action@v1
           with:
-            host: ${{secrets.SSH_HOST}}
+            host: ${{Secrets.SSH_HOST}}
             username: ubuntu
-            key: ${{secrets.SSH_KEY}}
+            key: ${{Secrets.SSH_KEY}}
             scripts:
                 cd ~/level5
                 git pull
