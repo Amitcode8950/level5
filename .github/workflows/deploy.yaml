@@ -12,7 +12,7 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1
         with:
-          host: ${{ secrets.SSH_HOST }}
+          host: ${{ secrets.SSH_HOST || 'ubuntu'}}
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
