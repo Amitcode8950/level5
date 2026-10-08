@@ -9,7 +9,7 @@ app.get("/health",(req,res)=>{
 })
 app.get("/",(req,res)=>{
     return res.status(200).json({
-        message :"Hello i start my server api"
+        message :"Hello i am papa"
     })
 })
 app.listen(PORT,()=>{
