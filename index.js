@@ -4,7 +4,7 @@ const app = express()
 
 app.get("/health",(req,res)=>{
     return res.status(200).json({
-        message :"All are good"
+        message :"All are good for health"
     })
 })
 app.get("/",(req,res)=>{
